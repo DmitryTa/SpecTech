@@ -1,0 +1,320 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  min-width: 1200px;
+}
+.container{
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: PT Sans, sans-serif;
+}
+.page-header{
+  background-color: #ffcd34;
+  height: 90px;
+  font-size: 0;
+  padding-top: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.logo{
+  width: 30%;
+  float: left;
+  font-size: 24px;
+}
+.nav-primary{
+  width: 70%;
+  text-align: right;
+}
+.nav-primary li{
+  display: inline-block;
+  margin-right: 32px;
+  font-size: 16px;
+}
+.logo, .nav-primary{
+  display: inline-block;
+  vertical-align: middle;
+}
+.nav-primary li:last-child{
+  margin-right: 0;
+}
+.logo > .logo_brand_main, .logo > img{
+  display: inline-block;
+  vertical-align: bottom;
+}
+.logo_brand_main{
+  padding-left: 10px;
+  color: black;
+  
+}
+.btn-order a{
+  background-color: #ffe184;
+  padding: 15px 35px;
+}
+.page-header a{
+  text-decoration: none;
+  color: black;
+}
+.stripes {
+  float: left;
+  width: 100%;
+  height: 15px;
+  background-image: linear-gradient(135deg, #FFCD34 35%,black 35%,black 65%,#FFCD34 65%);
+  -webkit-background-size: 35px 20px;
+  background-size: 35px 20px;
+  }
+.promo-block{
+  height: 460px;
+  background-image: url(../img/ekskavator.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 75%;
+  text-align: center;
+}
+.promo-block p{
+font-size: 44px;
+color: #ffffff;
+margin-top: 125px;
+font-weight: bold;
+text-transform: uppercase;
+}
+.promo-block_slogan{
+  font-size: 20px;
+  color: #e1e1e1;
+  width: 610px;
+  margin: 20px auto 35px;
+  padding: 0;
+}
+.promo-block_btn{
+  text-decoration: none;
+  color: #ffffff;
+  border: 2px solid #ffcd34;
+  padding: 10px 55px 12px 20px;
+  position: relative;
+  display: inline-block;
+}
+.promo-block_btn:after{
+  content: url(../pict/Forma.png);
+  position: absolute;
+  left: 160px;
+  top: 12px;
+}
+.form-order{
+  height: 175px;
+  background-color: #202e3b;
+}
+.form-order_heading{
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  color: #ffcd34;
+}
+input{
+  border: 1px solid #ffcd34;
+  height: 45px;
+  width: 202px;
+  background-color: #202e3b;
+  margin-right: 20px;
+  padding-left: 18px;
+  color: #ffffff;
+}
+input::-webkit-input-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: PT Sans, sans-serif;
+}
+input:-moz-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: PT Sans, sans-serif;
+}
+.form-order_btn {
+  font-size: 18px;
+  font-weight: bold;
+  height: 47px;
+  width: 210px;
+  color: #202e3b;
+  border: 1px solid #ffcd34;
+  background-color: #ffcd34;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-family: PT Sans, sans-serif;
+}
+.advantages{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+}
+.advantage-item {
+  width: 23.5%;
+  float: left;
+  padding-left: 20px;
+  margin-right: 2%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+  display: inline-block;
+  font-size: 13px;
+  line-height: 16px;
+}
+.advantage-item:last-child{
+  margin-right: 0;
+}
+.advantage-item{
+  padding-left: 50px;
+  position: relative;
+}
+.first:before{
+  content: url(../pict/Rectangle.png);
+  position: absolute;
+  top: 5px;
+  left: 0px;
+}
+.second:before{
+  content: url(../pict/Ellipse.png);
+  position: absolute;
+  top: 5px;
+  left: 0px;
+}
+.third:before{
+  content: url(../pict/Roundedr.png);
+  position: absolute;
+  top: 5px;
+  left: 0px;
+}
+.fouth:before{
+  content: url(../pict/Rounded.png);
+  position: absolute;
+  top: 5px;
+  left: 11px;
+}
+.deals{
+  background-color: #f3f3f3;
+}
+.deals h2{
+  font-size: 26px;
+  margin-top: 48px;
+  margin-bottom: 34px;
+}
+.technic-menu{
+  width: 30%;
+  float: left;
+}
+.about{
+  padding: 15px 0;
+}
+.about-number{
+  width: 40%;
+  float: left;
+  margin-right: 5%;
+}
+.technic-menu li{
+  font-size: 16px;
+  line-height: 38px;
+}
+.technic-menu ul{
+margin-bottom: 50px;
+}
+.technic-menu a{
+  color: #202e3b;
+}
+.deals-table{
+  width: 660px;
+  float: left;
+  font-size: 16px;
+}
+tr{
+  height: 40px;
+}
+td, th{
+  padding-left: 20px;
+}
+.deals-table th{
+  background-color: #dfdfdf;
+  text-align: left;
+}
+tr:nth-child(2n){
+  background-color: #f3f3f3;
+}
+tr:nth-child(2n+1){
+  background-color: #ffffff;
+}
+.about{
+  background-color: #202e3b;
+  padding-top: 50px;
+}
+.about h2{
+  font-size: 26px;
+  color: #ffffff;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.about li{
+  font-size: 18px;
+  line-height: 50px;
+  color: #9e9e9e;
+}
+.number{
+  font-size: 38px;
+  font-weight: bold;
+  color: #f1b132;
+}
+.about-number{
+  float: left;
+  width: 35%;
+  margin-right: 5%;
+}
+.about-reviews{
+  width: 60%;
+  float: left;
+}
+
+.review{
+  font-size: 0;
+  margin-bottom: 35px;
+}
+.review img{
+  display: inline-block;
+  vertical-align: top;
+  max-width: 35%;
+  margin-right: 25px;
+}
+.review blockquote{
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: top;
+  width: 65%;
+  color: #ffffff;
+}
+cite{
+  color: #f1b132;
+}
+.map{
+  margin: 0 auto;
+}
+.page-footer{
+  background-color: #202e3b;
+  height: 55px;
+  padding-top: 25px;
+}
+.page-footer a{
+text-decoration: none;
+color: #ffffff;
+}
+.btn-order2 a{
+color: #ffcd34;
+margin-left: 25px;
+margin-right: 35px;
+}
+.logo_brand{
+  color: #ffcd34;
+  padding-left: 10px;
+}
+.nav-primary{
+  margin-top: 10px;
+}
