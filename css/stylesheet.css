@@ -1,10 +1,3 @@
-*{
-  padding: 0;
-  margin: 0;
-}
-body{
-  min-width: 1200px;
-}
 .container{
   width: 960px;
   margin: 0 auto;
@@ -20,6 +13,10 @@ body{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+ul{
+  padding: 0;
+  margin: 0;
 }
 .logo{
   width: 30%;
@@ -144,10 +141,11 @@ input:-moz-placeholder {
   padding-left: 7px;
   padding-right: 7px;
   font-family: PT Sans, sans-serif;
+  border: 0;
 }
 .advantages{
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #ffffff;
 }
 .advantage-item {
@@ -172,26 +170,34 @@ input:-moz-placeholder {
 .first:before{
   content: url(../pict/Rectangle.png);
   position: absolute;
-  top: 5px;
+  top: 17px;
   left: 0px;
+  display: inline-block;
+  background-size: contain;
 }
 .second:before{
   content: url(../pict/Ellipse.png);
   position: absolute;
-  top: 5px;
-  left: 0px;
+  top: 17px;
+  left: -5px;
+  display: inline-block;
+  background-size: contain;
 }
 .third:before{
   content: url(../pict/Roundedr.png);
   position: absolute;
-  top: 5px;
-  left: 0px;
+  top: 17px;
+  left: -5px;
+  display: inline-block;
+  background-size: contain;
 }
 .fouth:before{
   content: url(../pict/Rounded.png);
   position: absolute;
-  top: 5px;
-  left: 11px;
+  top: 17px;
+  left: 5px;
+  display: inline-block;
+  background-size: contain;
 }
 .deals{
   background-color: #f3f3f3;
@@ -259,10 +265,20 @@ tr:nth-child(2n+1){
   line-height: 50px;
   color: #9e9e9e;
 }
-.number{
+.number-bold{
   font-size: 38px;
   font-weight: bold;
   color: #f1b132;
+  display: inline-block;
+}
+.line{
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 10px;
+}
+.blockquote{
+  padding: 0;
+  margin: 0;
 }
 .about-number{
   float: left;
@@ -281,14 +297,14 @@ tr:nth-child(2n+1){
 .review img{
   display: inline-block;
   vertical-align: top;
-  max-width: 35%;
+  max-width: 25%;
   margin-right: 25px;
 }
 .review blockquote{
   font-size: 18px;
   display: inline-block;
   vertical-align: top;
-  width: 65%;
+  width: 74%;
   color: #ffffff;
 }
 cite{
@@ -318,3 +334,166 @@ margin-right: 35px;
 .nav-primary{
   margin-top: 10px;
 }
+
+
+/*Разметка каталога*/
+
+/*Каталог. Под Header*/
+
+.consultation{
+  background-image: url(../img/catalog_bg_up.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.consultation-title{
+  font-size: 26px;
+  font-weight: normal;
+  color: #ffcd34;
+  float: left;
+  width: 60%;
+  margin-bottom: 0;
+}
+.consultation-slogan{
+  font-size: 16px;
+  color: #ffffff;
+  float: left;
+  width: 60%;
+  margin-top: 10px;
+}
+.consultation-button{
+  font-size: 18px;
+  font-weight: bold;
+  color: #202e3b;
+  text-decoration: none;
+  background-color: #ffcd34;
+  padding: 10px 5px;
+  margin-top: 15px;
+  float: right;
+  text-align: center;
+  width: 25%;
+}
+.consultation-underbutton{
+  font-size: 16px;
+  color: #ffffff;
+  float: right;
+  text-align: left;
+  width: 30%; 
+  position: relative;
+  left: 37px ;
+}
+
+.catalog{
+  width: 100%;
+  padding-top: 30px;
+  background-color: #f3f3f3;
+}
+.products{
+  width: 64%;
+  float: left;
+}
+
+/*SideBar Catalog*/
+
+.catalog-menu{
+  font-size: 16px;
+  line-height: 38px;
+  width: 36%;
+  float: left;
+}
+.catalog-menu h2{
+  font-size: 26px;
+  margin: 0 0 20px;
+}
+.catalog-menu h2:before{
+  content: "";
+  background-image: url(../pict/truck_catalog-menu.png);
+  width: 31px;
+  height: 24px;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 15px;
+}
+.catalog-menu ul{
+  margin-bottom: 25px;
+}
+.catalog-menu a{
+  color: #353535;
+}
+.catalog-menu-active-btn{
+  font-weight: bold;
+  text-decoration: none;
+}
+.catalog-menu-active-btn:before{
+  content: "";
+  background-image: url(../pict/catalog-menu-active.png);
+  background-repeat: no-repeat;
+  width: 7px;
+  height: 11px;
+  display: inline-block;
+  padding-right: 10px;
+}
+.catalog-menu-button-download {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #354b60;
+  padding: 10px 15px 10px 40px;
+  position: relative;
+}
+.catalog-menu-button-download:before{
+  content: "";
+  background-image: url(../pict/catalog-menu-btn-download.png);
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 18px;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+/*  Catalog products*/
+
+
+.product{
+  width: 47.5%;
+  margin-left: 2.5%;
+  float: left;
+  background-color: #fff;
+}
+.pagination{
+  clear: both;
+}
+.pagination li{
+  display: inline-block;
+  padding: 10px;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: blue;
+  border-radius: 5px;
+}
+.pagination a{
+  text-decoration: none;
+}
+/*
+.special-offer{
+  background-color: #cfc;
+}
+.offer{
+  width: 32%;
+  float: left;
+  margin-right: 2%;
+  background-color: white;
+  padding: 10px;
+  height: 200px;
+}
+.offer:last-child{
+  margin-right: 0;
+}
+*/
