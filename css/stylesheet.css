@@ -1,3 +1,6 @@
+body{
+  min-width: 960px;
+}
 .container{
   width: 960px;
   margin: 0 auto;
@@ -5,14 +8,27 @@
   box-sizing: border-box;
   font-family: PT Sans, sans-serif;
 }
+
+/*Хедер*/
+
 .page-header{
   background-color: #ffcd34;
-  height: 90px;
+  height: 60px;
   font-size: 0;
-  padding-top: 30px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  
+  position: relative;
+}
+.page-header:after{
+  content: "";
+  width: 100%;
+  height: 15px;
+  background-image: linear-gradient(135deg, #FFCD34 35%,black 35%,black 65%,#FFCD34 65%);
+  -webkit-background-size: 35px 20px;
+  background-size: 35px 20px;
+  position: absolute;
+  bottom: 0;
 }
 ul{
   padding: 0;
@@ -56,14 +72,9 @@ ul{
   text-decoration: none;
   color: black;
 }
-.stripes {
-  float: left;
-  width: 100%;
-  height: 15px;
-  background-image: linear-gradient(135deg, #FFCD34 35%,black 35%,black 65%,#FFCD34 65%);
-  -webkit-background-size: 35px 20px;
-  background-size: 35px 20px;
-  }
+
+/* Промо блок*/
+
 .promo-block{
   height: 460px;
   background-image: url(../img/ekskavator.jpg);
@@ -100,14 +111,18 @@ text-transform: uppercase;
   left: 160px;
   top: 12px;
 }
+
+/*Форма заказа*/
+
 .form-order{
-  height: 175px;
+  height: 185px;
   background-color: #202e3b;
+  position: relative;
 }
 .form-order_heading{
   font-size: 24px;
   font-weight: normal;
-  margin-top: 25px;
+  margin-top: 40px;
   margin-bottom: 30px;
   color: #ffcd34;
 }
@@ -143,6 +158,20 @@ input:-moz-placeholder {
   font-family: PT Sans, sans-serif;
   border: 0;
 }
+.form-order:before{
+  content: "";
+  width: 100%;
+  height: 15px;
+  background-image: linear-gradient(135deg, #FFCD34 35%,black 35%,black 65%,#FFCD34 65%);
+  -webkit-background-size: 35px 20px;
+  background-size: 35px 20px;
+  position: absolute;
+  top: 0;
+}
+
+/*Преимущества*/
+
+
 .advantages{
   padding-top: 30px;
   padding-bottom: 30px;
@@ -207,6 +236,9 @@ input:-moz-placeholder {
   margin-top: 48px;
   margin-bottom: 34px;
 }
+
+/*Вся техника*/
+
 .technic-menu{
   width: 30%;
   float: left;
@@ -250,9 +282,14 @@ tr:nth-child(2n){
 tr:nth-child(2n+1){
   background-color: #ffffff;
 }
+
+/*Спецтех в цифрах*/
+
 .about{
   background-color: #202e3b;
   padding-top: 50px;
+  position: relative;
+  height: 420px;
 }
 .about h2{
   font-size: 26px;
@@ -289,6 +326,27 @@ tr:nth-child(2n+1){
   width: 60%;
   float: left;
 }
+.about:before{
+  content: "";
+  width: 100%;
+  height: 15px;
+  background-image: linear-gradient(135deg, #FFCD34 35%,black 35%,black 65%,#FFCD34 65%);
+  -webkit-background-size: 35px 20px;
+  background-size: 35px 20px;
+  position: absolute;
+  top: 0;
+}
+.about:after{
+  content: "";
+  width: 100%;
+  height: 15px;
+  background-image: linear-gradient(135deg, #FFCD34 35%,black 35%,black 65%,#FFCD34 65%);
+  -webkit-background-size: 35px 20px;
+  background-size: 35px 20px;
+  position: absolute;
+  bottom: 0;
+}
+/*Отзывы*/
 
 .review{
   font-size: 0;
@@ -303,6 +361,7 @@ tr:nth-child(2n+1){
 .review blockquote{
   font-size: 18px;
   display: inline-block;
+  margin: 0;
   vertical-align: top;
   width: 74%;
   color: #ffffff;
@@ -361,7 +420,7 @@ margin-right: 35px;
   font-size: 16px;
   color: #ffffff;
   float: left;
-  width: 60%;
+  width: 65%;
   margin-top: 10px;
 }
 .consultation-button{
@@ -392,7 +451,7 @@ margin-right: 35px;
   background-color: #f3f3f3;
 }
 .products{
-  width: 64%;
+  width: 68%;
   float: left;
 }
 
@@ -401,7 +460,7 @@ margin-right: 35px;
 .catalog-menu{
   font-size: 16px;
   line-height: 38px;
-  width: 36%;
+  width: 32%;
   float: left;
 }
 .catalog-menu h2{
@@ -422,7 +481,7 @@ margin-right: 35px;
 .catalog-menu ul{
   margin-bottom: 25px;
 }
-.catalog-menu a{
+.catalog-menu-list a{
   color: #353535;
 }
 .catalog-menu-active-btn{
@@ -462,38 +521,177 @@ margin-right: 35px;
 
 
 .product{
-  width: 47.5%;
-  margin-left: 2.5%;
+  width: 47%;
+  margin-left: 3%;
+  margin-bottom: 3%;
   float: left;
-  background-color: #fff;
+  background-color: #ffffff;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 25px 25px 35px 25px;
+}
+.product-title{
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: left;
+}
+.price{
+  font-size: 27px;
+  font-weight: bold;
+}
+.product p{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+.product-button{
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #cfc;
+  padding: 8px 12px;
+  width: 40%;
+  display: inline-block;
+}
+.catalog-button{
+  font-size: 0;
+}
+.button-go{
+  background-color: #f3c331;
+}
+.button-about{
+  background-color: #354b60;
 }
 .pagination{
   clear: both;
+  text-align: center;
 }
 .pagination li{
+  font-size: 16px;
   display: inline-block;
-  padding: 10px;
+  padding: 1px 5px;
   margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 10px;
   text-decoration: none;
-  background-color: blue;
-  border-radius: 5px;
+  color: #ffffff;
+  border-radius: 3px;
+
 }
 .pagination a{
   text-decoration: none;
+  color: #353535;
 }
-/*
+.pagination li:first-child{
+  background-color: #354b60;
+}
+
+
+
+/*Спецпредложение*/
+
 .special-offer{
-  background-color: #cfc;
+  background-image: url(../img/catalog_bg_down.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  width: 100%;
+}
+.special-offer h3{
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
 }
 .offer{
   width: 32%;
-  float: left;
   margin-right: 2%;
-  background-color: white;
-  padding: 10px;
-  height: 200px;
+  float: left;
+  background-color: #ffffff;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 25px 25px 35px 25px;
+  margin-bottom: 50px;
 }
 .offer:last-child{
   margin-right: 0;
 }
-*/
+.offer h3{
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+}
+.offer p{
+  font-weight: bold;
+  text-align: left;
+}
+.ex-price{
+  font-size: 22px;
+  font-weight: bold;
+  color: #d12222;
+  text-decoration: line-through;
+  padding-right: 15px;
+}
+
+/*Portfolio*/
+
+.portfolio-nav{
+  background-image: url(../img/portfolio-nav.jpg);
+}
+.portfolio-title{
+  font-size: 14px;
+  width: 40%;
+  float: left;
+}
+.portfolio-nav ul{
+  width: 60%;
+  float: right;
+  text-align: right;
+  padding-top: 10px;
+}
+.portfolio-nav li{
+  display: inline-block;
+}
+.section{
+  height: 500px;
+}
+.one{
+  background-color: #ccc;
+}
+.two{
+  background-color: #ffc;
+}
+.three{
+  background-color: #cff;
+}
+.post{
+  background-color: #fff;
+  width: 32%;
+  padding: 28px;
+  float: left;
+  margin-top: 11%;  
+}
+h2{
+  font-size: 19px;
+  padding-bottom: 10px;
+}
+.section-button{
+  text-decoration: none;
+  color: black;
+  background-color: rgb(255, 206, 52);
+  font-size: 15px;
+  padding: 5px 10px;
+}
+.section-text{
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
