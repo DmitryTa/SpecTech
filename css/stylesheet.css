@@ -181,6 +181,23 @@ text-transform: uppercase;
   position: absolute;
   top: 0;
 }
+.form-order_btn:hover{
+  background-color: #ffd966;
+}
+.form-order_btn:active{
+  background-color: #f6bf16;
+}
+input:focus{
+  outline: none;
+  border-color: #978952;
+}
+button:focus{
+  outline: none;
+  background-color: #f6bf16;
+}
+textarea:focus{
+  outline: none;
+}
 
 /*Преимущества*/
 
@@ -453,6 +470,12 @@ margin-right: 35px;
   text-align: center;
   width: 25%;
 }
+.consultation-button:hover{
+  background-color: #ffd966;
+}
+.consultation-button:active{
+  background-color: #f6bf16;
+}
 .consultation-underbutton{
   font-size: 16px;
   color: #ffffff;
@@ -534,7 +557,12 @@ margin-right: 35px;
   left: 10px;
   bottom: 10px;
 }
-
+.catalog-menu-button-download:hover{
+background-color: #46617a;
+}
+.catalog-menu-button-download:active{
+background-color: #567999;
+}
 /*  Catalog products*/
 
 
@@ -714,6 +742,12 @@ margin-right: 35px;
   text-decoration: none;
   border-bottom: 1px solid white;
 }
+.portfolio-nav a:hover{
+  font-weight: bold;
+}
+.portfolio-nav a:active{
+  border: 0;
+}
 .portfolio-section{
   min-height: 500px;
 }
@@ -759,6 +793,12 @@ margin-right: 35px;
   font-weight: bold;
   padding: 10px 35px 10px 15px;
   position: relative;
+}
+.post-button:hover{
+  background-color: #ffd966;
+}
+.post-button:active{
+  background-color: #f6bf16;
 }
 .post-button:after{
   content: "";
@@ -820,6 +860,9 @@ float: left;
   border: 1px solid  #d5d5d5;
   padding-left: 15px;
 }
+.form-order_contacts input:focus{
+  border: 1px solid  #98999b;
+}
 textarea{
   width: 100%;
   height: 84px;
@@ -828,6 +871,9 @@ textarea{
   padding-left: 15px;
   padding-top: 10px;
   margin-bottom: 15px;
+}
+textarea:focus{
+  border: 1px solid  #98999b;
 }
 .map_form-order{
   background-color: #f3f3f3;
