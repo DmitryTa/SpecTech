@@ -126,7 +126,7 @@ text-transform: uppercase;
   margin-bottom: 30px;
   color: #ffcd34;
 }
-input{
+.form-order input{
   border: 1px solid #ffcd34;
   height: 45px;
   width: 202px;
@@ -135,12 +135,12 @@ input{
   padding-left: 18px;
   color: #ffffff;
 }
-input::-webkit-input-placeholder {
+.form-order input::-webkit-input-placeholder {
   color: #ffffff;
   font-size: 16px;
   font-family: PT Sans, sans-serif;
 }
-input:-moz-placeholder {
+.form-order input:-moz-placeholder {
   color: #ffffff;
   font-size: 16px;
   font-family: PT Sans, sans-serif;
@@ -366,7 +366,7 @@ tr:nth-child(2n+1){
   width: 74%;
   color: #ffffff;
 }
-cite{
+.review cite{
   color: #f1b132;
 }
 .map{
@@ -705,7 +705,7 @@ margin-right: 35px;
 .post{
   background-color: #fff;
   width: 30%;
-  padding: 28px;
+  padding: 28px 20px 35px 28px;
   float: left;
   margin-top: 11%;  
 }
@@ -739,3 +739,133 @@ margin-right: 35px;
   line-height: 20px;
 }
 
+/* Контакты */
+.contact-us{
+  background-image: url(../img/contacts_excavator_back.jpg);
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.contact-us-title, .contact-us-text{
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.contact-us-title{
+  font-size: 26px;
+  font-weight: normal;
+  color: #ffcd34;
+}
+.contact-us-text{
+  font-size: 16px;
+  color: #ffffff;
+  padding-left: 15px;
+}
+.contact-us-block{
+float: left;
+}
+.contact-btn{
+  margin-top: 37px;
+}
+.map_contacts{
+  width: 64%;
+  float: left;
+  margin-right: 2%;
+}
+.form-order_contacts{
+  width: 32%;
+  float: left;
+}
+.form-order_contacts input{
+  width: 100%;
+  height: 38px;
+  margin-bottom: 10px;
+  border: 1px solid  #d5d5d5;
+  padding-left: 15px;
+}
+textarea{
+  width: 100%;
+  height: 84px;
+  max-height: 94px;
+  border: 1px solid  #d5d5d5;
+  padding-left: 15px;
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+.map_form-order{
+  background-color: #f3f3f3;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.form-order_contacts p{
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 18px 0;
+  padding: 0 0 0 35px;
+}
+.contact-phone, .contact-email{
+  position: relative;
+}
+.contact-phone:before{
+  content: "";
+  background-image: url(../pict/phone-icon-contacts.png);
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+.contact-email:before{
+  content: "";
+  background-image: url(../pict/mail-icon-contacts.png);
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 23px;
+  height: 17px;
+}
+.form-order_contacts h2{
+  font-size: 16px;
+  font-weight: normal;
+}
+.form-order_contacts button{
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  background-color: #354b60;
+  width: 330px;
+  border: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.map_contacts iframe{
+  border: 1px solid  #d5d5d5;
+}
+.contacts-reviews-title{
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 35px;
+}
+.contacts-reviews{
+  font-size: 0;
+  padding-bottom: 70px;
+}
+.contacts-review{
+  display: inline-block;
+  width: 24.25%;
+  margin-right: 1%;
+  text-align: center;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.contacts-review:last-child{
+  margin-right: 0;
+}
+.contacts-review blockquote{
+  margin: 30px 0 0 0;
+} 
+.contacts-cite{
+  font-weight: bold;
+  line-height: 40px;
+}
