@@ -61,17 +61,30 @@ ul{
 }
 .logo_brand_main{
   padding-left: 10px;
-  color: black;
-  
+  color: black; 
+}
+.page-header a{
+  text-decoration: none;
+  color: #98791b;
 }
 .btn-order a{
   background-color: #ffe184;
   padding: 15px 35px;
-}
-.page-header a{
-  text-decoration: none;
   color: black;
 }
+.active-btn-menu a{
+  color: black;
+}
+.nav-primary a:hover{
+  color: black;
+  border: 2px solid #bc9d36;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
 
 /* Промо блок*/
 
@@ -357,6 +370,11 @@ tr:nth-child(2n+1){
   vertical-align: top;
   max-width: 25%;
   margin-right: 25px;
+  border: 3px solid #FFCD34;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .review blockquote{
   font-size: 18px;
@@ -370,7 +388,7 @@ tr:nth-child(2n+1){
   color: #f1b132;
 }
 .map{
-  margin: 0 auto;
+  width: 100%;
 }
 .page-footer{
   background-color: #202e3b;
@@ -563,8 +581,20 @@ margin-right: 35px;
 .button-go{
   background-color: #f3c331;
 }
+.button-go:hover{
+  background-color: #ffd966;
+}
+.button-go:active{
+  background-color: #ffc600;
+}
 .button-about{
   background-color: #354b60;
+}
+.button-about:hover{
+  background-color: #46617a;
+}
+.button-about:active{
+  background-color: #567999;
 }
 .pagination{
   clear: both;
@@ -576,7 +606,7 @@ margin-right: 35px;
   padding: 1px 5px;
   margin-top: 20px;
   margin-bottom: 30px;
-  margin-left: 10px;
+  margin-left: 5px;
   text-decoration: none;
   color: #ffffff;
   border-radius: 3px;
@@ -585,11 +615,18 @@ margin-right: 35px;
 .pagination a{
   text-decoration: none;
   color: #353535;
+  border: 2px solid #f3f3f3;
+  padding: 2.5px 4px 1px 4px;
 }
 .pagination li:first-child{
   background-color: #354b60;
 }
-
+.pagination a:hover{
+  border-color: #9aa5af;
+}
+.pagination a:active{
+  border-color: #354b60;
+}
 
 
 /*Спецпредложение*/
@@ -858,6 +895,10 @@ textarea{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.contacts-review a{
+  text-decoration: none;
+  color: black;
 }
 .contacts-review:last-child{
   margin-right: 0;
