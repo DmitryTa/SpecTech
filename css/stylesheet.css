@@ -1,23 +1,24 @@
 body{
   min-width: 960px;
+  font-family: PT Sans, sans-serif;
 }
 .container{
   width: 960px;
   margin: 0 auto;
   overflow: hidden;
   box-sizing: border-box;
-  font-family: PT Sans, sans-serif;
 }
 
 /*Хедер*/
-
+.clearfix{
+  clear: both;
+}
 .page-header{
   background-color: #ffcd34;
-  height: 60px;
+  min-height: 60px;
   font-size: 0;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  
+  padding-top: 10px;
+  padding-bottom: 20px;
   position: relative;
 }
 .page-header:after{
@@ -36,21 +37,24 @@ ul{
 }
 .logo{
   width: 30%;
-  float: left;
   font-size: 24px;
 }
 .nav-primary{
   width: 70%;
   text-align: right;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .nav-primary li{
   display: inline-block;
-  margin-right: 32px;
+  margin-right: 22px;
   font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .logo, .nav-primary{
   display: inline-block;
-  vertical-align: middle;
 }
 .nav-primary li:last-child{
   margin-right: 0;
@@ -69,27 +73,41 @@ ul{
 }
 .btn-order a{
   background-color: #ffe184;
-  padding: 15px 35px;
+  padding: 12px 35px;
   color: black;
 }
 .active-btn-menu a{
   color: black;
 }
-.nav-primary a:hover{
+.nav-primary li:first-child a,
+.nav-primary li:nth-child(2n) a,
+.nav-primary li:nth-child(3) a{
+  border: 2px solid #ffcd34;
+  padding: 10px 5px;
+}
+.nav-primary li:first-child a:hover,
+.nav-primary li:nth-child(2n) a:hover,
+.nav-primary li:nth-child(3) a:hover{
   color: black;
   border: 2px solid #bc9d36;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
-
-
-
+.nav-primary li:first-child a:active,
+.nav-primary li:nth-child(2n) a:active,
+.nav-primary li:nth-child(3) a:active{
+  color: black;
+  border: 2px solid #796e38;
+}
+.nav-primary li:last-child a:hover{
+  background-color: #ffecb2;
+}
+.nav-primary li:last-child a:active{
+  background-color: #f6bf16;
+}
 
 /* Промо блок*/
 
 .promo-block{
-  height: 460px;
+  min-height: 460px;
   background-image: url(../img/ekskavator.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -97,17 +115,19 @@ ul{
   text-align: center;
 }
 .promo-block p{
-font-size: 44px;
-color: #ffffff;
-margin-top: 125px;
-font-weight: bold;
-text-transform: uppercase;
+  font-size: 44px;
+  color: #ffffff;
+  margin-top: 140px;
+  margin-bottom: 0;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .promo-block_slogan{
   font-size: 20px;
+  font-weight: normal;
   color: #e1e1e1;
   width: 610px;
-  margin: 20px auto 35px;
+  margin: 20px auto 25px;
   padding: 0;
 }
 .promo-block_btn{
@@ -128,7 +148,7 @@ text-transform: uppercase;
 /*Форма заказа*/
 
 .form-order{
-  height: 185px;
+  min-height: 185px;
   background-color: #202e3b;
   position: relative;
 }
@@ -146,7 +166,11 @@ text-transform: uppercase;
   background-color: #202e3b;
   margin-right: 20px;
   padding-left: 18px;
+  padding-right: 18px;
   color: #ffffff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .form-order input::-webkit-input-placeholder {
   color: #ffffff;
@@ -226,37 +250,30 @@ textarea:focus{
   padding-left: 50px;
   position: relative;
 }
+.advantage-item:before{
+   position: absolute;
+   display: inline-block;
+   background-size: contain;
+}
 .first:before{
   content: url(../pict/Rectangle.png);
-  position: absolute;
   top: 17px;
   left: 0px;
-  display: inline-block;
-  background-size: contain;
 }
 .second:before{
   content: url(../pict/Ellipse.png);
-  position: absolute;
   top: 17px;
   left: -5px;
-  display: inline-block;
-  background-size: contain;
 }
 .third:before{
   content: url(../pict/Roundedr.png);
-  position: absolute;
   top: 17px;
   left: -5px;
-  display: inline-block;
-  background-size: contain;
 }
 .fouth:before{
   content: url(../pict/Rounded.png);
-  position: absolute;
   top: 17px;
   left: 5px;
-  display: inline-block;
-  background-size: contain;
 }
 .deals{
   background-color: #f3f3f3;
@@ -277,7 +294,7 @@ textarea:focus{
   padding: 15px 0;
 }
 .about-number{
-  width: 40%;
+  width: 65%;
   float: left;
   margin-right: 5%;
 }
@@ -409,24 +426,59 @@ tr:nth-child(2n+1){
 }
 .page-footer{
   background-color: #202e3b;
-  height: 55px;
-  padding-top: 25px;
+  min-height: 60px;
+  font-size: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .page-footer a{
-text-decoration: none;
-color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 .btn-order2 a{
-color: #ffcd34;
-margin-left: 25px;
-margin-right: 35px;
+  color: #ffcd34;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 .logo_brand{
   color: #ffcd34;
   padding-left: 10px;
 }
-.nav-primary{
-  margin-top: 10px;
+.nav-primary-down{
+  width: 70%;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.nav-primary-down li{
+  display: inline-block;
+  margin-right: 22px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.logo, .nav-primary-down{
+  display: inline-block;
+}
+.nav-primary-down li:last-child{
+  margin-right: 0;
+}
+.nav-primary-down li:first-child a,
+.nav-primary-down li:nth-child(2n) a,
+.nav-primary-down li:nth-child(3) a{
+  border: 2px solid #202e3b;
+  padding: 10px 5px;
+}
+.nav-primary-down li:first-child a:hover,
+.nav-primary-down li:nth-child(2n) a:hover,
+.nav-primary-down li:nth-child(3) a:hover{
+  border: 2px solid #636d76;
+}
+.nav-primary-down li:first-child a:active,
+.nav-primary-down li:nth-child(2n) a:active,
+.nav-primary-down li:nth-child(3) a:active{
+  border: 2px solid #a6abb1;
 }
 
 
@@ -577,6 +629,7 @@ background-color: #567999;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 25px 25px 35px 25px;
+  position: relative;
 }
 .product-title{
   margin-top: 0;
@@ -623,6 +676,19 @@ background-color: #567999;
 }
 .button-about:active{
   background-color: #567999;
+}
+.new-product:after{
+  content: "new";
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  /*transform: rotate(35deg);*/
+  background-image: url(../pict/catalog-new_product-lenta.png);
+  position: absolute;
+  width: 71px;
+  height: 69px;
+  top: 0;
+  right: 0;
 }
 .pagination{
   clear: both;
@@ -682,9 +748,23 @@ background-color: #567999;
   box-sizing: border-box;
   padding: 25px 25px 35px 25px;
   margin-bottom: 50px;
+  position: relative;
 }
 .offer:last-child{
   margin-right: 0;
+}
+.best-price:after{
+  content: "sale";
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  /*transform: rotate(35deg);*/
+  background-image: url(../pict/special-offer-lenta.png);
+  position: absolute;
+  width: 71px;
+  height: 69px;
+  top: 0;
+  right: 0;
 }
 .offer h3{
   margin-top: 0;
@@ -865,8 +945,9 @@ float: left;
 }
 textarea{
   width: 100%;
+  max-width: 100%;
   height: 84px;
-  max-height: 94px;
+  max-height: 84px;
   border: 1px solid  #d5d5d5;
   padding-left: 15px;
   padding-top: 10px;
