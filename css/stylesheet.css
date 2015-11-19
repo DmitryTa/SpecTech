@@ -10,9 +10,7 @@ body{
 }
 
 /*Хедер*/
-.clearfix{
-  clear: both;
-}
+
 .page-header{
   background-color: #ffcd34;
   min-height: 60px;
@@ -162,7 +160,7 @@ ul{
 .form-order input{
   border: 1px solid #ffcd34;
   height: 45px;
-  width: 202px;
+  width: 225px;
   background-color: #202e3b;
   margin-right: 20px;
   padding-left: 18px;
