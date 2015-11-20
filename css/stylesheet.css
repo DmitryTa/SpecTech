@@ -839,7 +839,9 @@ background-color: #567999;
   border: 0;
 }
 .portfolio-section{
-  min-height: 500px;
+  -webkit-background-size: 100%;
+   background-size: 100%;
+   background-repeat: no-repeat;
 }
 .portfolio-section:before{
   content: "";
@@ -850,25 +852,20 @@ background-color: #567999;
 }
 .one{
    background-image: url(../img/portfolio_large_up.jpg);
-   -webkit-background-size: 100%;
-   background-size: 100%;
 }
 .two{
   background-image: url(../img/portfolio-large-middle.jpg);
-  -webkit-background-size: 100%;
-  background-size: 100%;
 }
 .three{
   background-image: url(../img/portfolio-large-down.jpg);
-  -webkit-background-size: 100%;
-  background-size: 100%;
 }
 .post{
   background-color: #fff;
   width: 30%;
   padding: 28px 20px 35px 28px;
   float: left;
-  margin-top: 11%;  
+  margin-top: 11%;
+  margin-bottom: 14%;  
 }
 .post-title{
   font-size: 20px;
