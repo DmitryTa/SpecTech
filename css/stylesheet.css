@@ -811,10 +811,8 @@ background-color: #567999;
 .portfolio-nav{
   background-image: url(../img/portfolio-nav.jpg);
   background-position: 0% 80%;
-  -webkit-background-size: 100%;
-  background-size: 100%;
-  -webkit-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 .portfolio-title h1{
   font-size: 24px;
@@ -915,8 +913,8 @@ background-color: #567999;
 /* Контакты */
 .contact-us{
   background-image: url(../img/contacts_excavator_back.jpg);
-  -webkit-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .contact-us-title, .contact-us-text{
@@ -950,11 +948,13 @@ float: left;
   float: left;
 }
 .form-order_contacts input{
-  width: 100%;
+  width: 325px;
   height: 38px;
   margin-bottom: 10px;
   border: 1px solid  #d5d5d5;
   padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
 }
 .form-order_contacts input:focus{
   border: 1px solid  #98999b;
@@ -1038,6 +1038,7 @@ textarea:focus{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  vertical-align: top;
 }
 .contacts-review a{
   text-decoration: none;
