@@ -492,25 +492,30 @@ tr:nth-child(2n+1){
 .consultation{
   background-image: url(../img/catalog_bg_up.jpg);
   background-repeat: no-repeat;
-  -webkit-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+.consultation-to-left{
+  width: 65%;
+  float: left;
+}
+.consultation-to-right{
+  width: 25%;
+  float: right;
 }
 .consultation-title{
   font-size: 26px;
   font-weight: normal;
   color: #ffcd34;
-  float: left;
-  width: 60%;
   margin-bottom: 0;
+  margin-top: 0;
 }
 .consultation-slogan{
   font-size: 16px;
   color: #ffffff;
-  float: left;
-  width: 65%;
   margin-top: 10px;
 }
 .consultation-button{
@@ -520,10 +525,9 @@ tr:nth-child(2n+1){
   text-decoration: none;
   background-color: #ffcd34;
   padding: 10px 5px;
-  margin-top: 15px;
-  float: right;
   text-align: center;
-  width: 25%;
+  width: 100%;
+  display: block;
 }
 .consultation-button:hover{
   background-color: #ffd966;
@@ -536,9 +540,6 @@ tr:nth-child(2n+1){
   color: #ffffff;
   float: right;
   text-align: left;
-  width: 30%; 
-  position: relative;
-  left: 37px ;
 }
 
 .catalog{
@@ -633,6 +634,9 @@ background-color: #567999;
   box-sizing: border-box;
   padding: 25px 25px 35px 25px;
   position: relative;
+}
+.product:nth-child(3n){
+	clear: left;
 }
 .product-title{
   margin-top: 0;
@@ -737,8 +741,8 @@ background-color: #567999;
 .special-offer{
   background-image: url(../img/catalog_bg_down.jpg);
   background-repeat: no-repeat;
-  -webkit-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
   width: 100%;
 }
 .special-offer h3{
