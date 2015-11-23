@@ -154,8 +154,11 @@ ul{
   font-size: 24px;
   font-weight: normal;
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #ffcd34;
+}
+.form-order_form{
+  padding: 10px 0;
 }
 .form-order input{
   border: 1px solid #ffcd34;
@@ -181,9 +184,9 @@ ul{
   font-family: PT Sans, sans-serif;
 }
 .form-order_btn {
-  font-size: 18px;
+  font-size: 1.1em;
   font-weight: bold;
-  height: 47px;
+  height: 45px;
   width: 210px;
   color: #202e3b;
   border: 1px solid #ffcd34;
@@ -192,6 +195,7 @@ ul{
   padding-right: 7px;
   font-family: PT Sans, sans-serif;
   border: 0;
+  padding-bottom: 2px;
 }
 .form-order:before{
   content: "";
@@ -276,7 +280,7 @@ textarea:focus{
 .deals{
   background-color: #f3f3f3;
   padding-top: 28px;
-  padding-bottom: 5px;
+  padding-bottom: 25px;
 }
 .deals h2{
   font-size: 26px;
@@ -304,8 +308,12 @@ textarea:focus{
   font-size: 16px;
   line-height: 38px;
 }
+.technic-menu li:last-child{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 .technic-menu ul{
-margin-bottom: 50px;
+margin-bottom: 20px;
 }
 .special-offer_index{
 	width: 70%;
@@ -949,7 +957,7 @@ float: left;
 }
 .form-order_contacts input{
   width: 325px;
-  height: 38px;
+  height: 42px;
   margin-bottom: 10px;
   border: 1px solid  #d5d5d5;
   padding-left: 15px;
@@ -960,12 +968,13 @@ float: left;
   border: 1px solid  #98999b;
 }
 textarea{
-  width: 100%;
-  max-width: 100%;
+  width: 293px;
+  max-width: 293px;
   height: 84px;
   max-height: 84px;
   border: 1px solid  #d5d5d5;
   padding-left: 15px;
+  padding-right: 15px;
   padding-top: 10px;
   margin-bottom: 15px;
 }
@@ -1039,6 +1048,9 @@ textarea:focus{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   vertical-align: top;
+}
+.contacts-review img{
+   border-radius: 50%;
 }
 .contacts-review a{
   text-decoration: none;
