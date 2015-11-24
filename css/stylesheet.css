@@ -154,8 +154,11 @@ ul{
   font-size: 24px;
   font-weight: normal;
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #ffcd34;
+}
+.form-order_form{
+  padding: 10px 0;
 }
 .form-order input{
   border: 1px solid #ffcd34;
@@ -181,9 +184,9 @@ ul{
   font-family: PT Sans, sans-serif;
 }
 .form-order_btn {
-  font-size: 18px;
+  font-size: 1.1em;
   font-weight: bold;
-  height: 47px;
+  height: 45px;
   width: 210px;
   color: #202e3b;
   border: 1px solid #ffcd34;
@@ -192,6 +195,7 @@ ul{
   padding-right: 7px;
   font-family: PT Sans, sans-serif;
   border: 0;
+  padding-bottom: 2px;
 }
 .form-order:before{
   content: "";
@@ -275,11 +279,15 @@ textarea:focus{
 }
 .deals{
   background-color: #f3f3f3;
+  padding-top: 28px;
+  padding-bottom: 25px;
 }
 .deals h2{
   font-size: 26px;
-  margin-top: 48px;
   margin-bottom: 34px;
+}
+.technic-menu h2{
+	margin-bottom: 26px;
 }
 
 /*Вся техника*/
@@ -301,7 +309,11 @@ textarea:focus{
   line-height: 38px;
 }
 .technic-menu ul{
-margin-bottom: 50px;
+margin-bottom: 20px;
+}
+.special-offer_index{
+	width: 70%;
+    float: left;
 }
 .technic-menu a{
   color: #202e3b;
@@ -333,8 +345,8 @@ tr:nth-child(2n+1){
 .about{
   background-color: #202e3b;
   padding-top: 50px;
+  padding-bottom: 40px;
   position: relative;
-  height: 420px;
 }
 .about h2{
   font-size: 26px;
@@ -419,9 +431,6 @@ tr:nth-child(2n+1){
 .review cite{
   color: #f1b132;
 }
-.map{
-  width: 100%;
-}
 .page-footer{
   background-color: #202e3b;
   min-height: 60px;
@@ -487,25 +496,30 @@ tr:nth-child(2n+1){
 .consultation{
   background-image: url(../img/catalog_bg_up.jpg);
   background-repeat: no-repeat;
-  -webkit-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+.consultation-to-left{
+  width: 65%;
+  float: left;
+}
+.consultation-to-right{
+  width: 25%;
+  float: right;
 }
 .consultation-title{
   font-size: 26px;
   font-weight: normal;
   color: #ffcd34;
-  float: left;
-  width: 60%;
   margin-bottom: 0;
+  margin-top: 0;
 }
 .consultation-slogan{
   font-size: 16px;
   color: #ffffff;
-  float: left;
-  width: 65%;
   margin-top: 10px;
 }
 .consultation-button{
@@ -515,10 +529,9 @@ tr:nth-child(2n+1){
   text-decoration: none;
   background-color: #ffcd34;
   padding: 10px 5px;
-  margin-top: 15px;
-  float: right;
   text-align: center;
-  width: 25%;
+  width: 100%;
+  display: block;
 }
 .consultation-button:hover{
   background-color: #ffd966;
@@ -531,9 +544,6 @@ tr:nth-child(2n+1){
   color: #ffffff;
   float: right;
   text-align: left;
-  width: 30%; 
-  position: relative;
-  left: 37px ;
 }
 
 .catalog{
@@ -628,6 +638,9 @@ background-color: #567999;
   box-sizing: border-box;
   padding: 25px 25px 35px 25px;
   position: relative;
+}
+.product:nth-child(3n){
+	clear: left;
 }
 .product-title{
   margin-top: 0;
@@ -732,8 +745,8 @@ background-color: #567999;
 .special-offer{
   background-image: url(../img/catalog_bg_down.jpg);
   background-repeat: no-repeat;
-  -webkit-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
   width: 100%;
 }
 .special-offer h3{
@@ -802,10 +815,8 @@ background-color: #567999;
 .portfolio-nav{
   background-image: url(../img/portfolio-nav.jpg);
   background-position: 0% 80%;
-  -webkit-background-size: 100%;
-  background-size: 100%;
-  -webkit-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 .portfolio-title h1{
   font-size: 24px;
@@ -906,8 +917,8 @@ background-color: #567999;
 /* Контакты */
 .contact-us{
   background-image: url(../img/contacts_excavator_back.jpg);
-  -webkit-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .contact-us-title, .contact-us-text{
@@ -941,22 +952,25 @@ float: left;
   float: left;
 }
 .form-order_contacts input{
-  width: 100%;
-  height: 38px;
+  width: 325px;
+  height: 42px;
   margin-bottom: 10px;
   border: 1px solid  #d5d5d5;
   padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
 }
 .form-order_contacts input:focus{
   border: 1px solid  #98999b;
 }
 textarea{
-  width: 100%;
-  max-width: 100%;
+  width: 293px;
+  max-width: 293px;
   height: 84px;
   max-height: 84px;
   border: 1px solid  #d5d5d5;
   padding-left: 15px;
+  padding-right: 15px;
   padding-top: 10px;
   margin-bottom: 15px;
 }
@@ -1029,6 +1043,10 @@ textarea:focus{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  vertical-align: top;
+}
+.contacts-review img{
+   border-radius: 50%;
 }
 .contacts-review a{
   text-decoration: none;
