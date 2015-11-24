@@ -137,7 +137,7 @@ ul{
   display: inline-block;
 }
 .promo-block_btn:after{
-  content: url(../pict/Forma.png);
+  content: url(../img/icon/Forma.png);
   position: absolute;
   left: 160px;
   top: 12px;
@@ -254,22 +254,22 @@ textarea:focus{
    background-size: contain;
 }
 .first:before{
-  content: url(../pict/Rectangle.png);
+  content: url(../img/icon/Rectangle.png);
   top: 17px;
   left: 0px;
 }
 .second:before{
-  content: url(../pict/Ellipse.png);
+  content: url(../img/icon/Ellipse.png);
   top: 17px;
   left: -5px;
 }
 .third:before{
-  content: url(../pict/Roundedr.png);
+  content: url(../img/icon/Roundedr.png);
   top: 17px;
   left: -5px;
 }
 .fouth:before{
-  content: url(../pict/Rounded.png);
+  content: url(../img/icon/Rounded.png);
   top: 17px;
   left: 5px;
 }
@@ -560,7 +560,7 @@ tr:nth-child(2n+1){
 }
 .catalog-menu h2:before{
   content: "";
-  background-image: url(../pict/truck_catalog-menu.png);
+  background-image: url(../img/icon/truck_catalog-menu.png);
   width: 31px;
   height: 24px;
   -webkit-background-size: contain;
@@ -581,7 +581,7 @@ tr:nth-child(2n+1){
 }
 .catalog-menu-active-btn:before{
   content: "";
-  background-image: url(../pict/catalog-menu-active.png);
+  background-image: url(../img/icon/catalog-menu-active.png);
   background-repeat: no-repeat;
   width: 7px;
   height: 11px;
@@ -598,7 +598,7 @@ tr:nth-child(2n+1){
 }
 .catalog-menu-button-download:before{
   content: "";
-  background-image: url(../pict/catalog-menu-btn-download.png);
+  background-image: url(../img/icon/catalog-menu-btn-download.png);
   background-repeat: no-repeat;
   width: 17px;
   height: 18px;
@@ -687,7 +687,7 @@ background-color: #567999;
 }
 .new-product:before{
   content: "";
-  background-image: url(../pict/catalog-new_product-lenta.png);
+  background-image: url(../img/icon/catalog-new_product-lenta.png);
   position: absolute;
   width: 71px;
   height: 69px;
@@ -769,7 +769,7 @@ background-color: #567999;
 }
 .best-price:before{
   content: "";
-  background-image: url(../pict/special-offer-lenta.png);
+  background-image: url(../img/icon/special-offer-lenta.png);
   position: absolute;
   width: 71px;
   height: 69px;
@@ -889,7 +889,7 @@ background-color: #567999;
 }
 .post-button:after{
   content: "";
-  background-image: url(../pict/portfolio-post-arrow.png);
+  background-image: url(../img/icon/portfolio-post-arrow.png);
   display: inline-block;
   width: 13px;
   height: 19px;
@@ -979,7 +979,7 @@ textarea:focus{
 }
 .contact-phone:before{
   content: "";
-  background-image: url(../pict/phone-icon-contacts.png);
+  background-image: url(../img/icon/phone-icon-contacts.png);
   position: absolute;
   left: 0;
   width: 20px;
@@ -987,7 +987,7 @@ textarea:focus{
 }
 .contact-email:before{
   content: "";
-  background-image: url(../pict/mail-icon-contacts.png);
+  background-image: url(../img/icon/mail-icon-contacts.png);
   position: absolute;
   left: 0;
   top: 3px;
